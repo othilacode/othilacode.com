@@ -23,7 +23,7 @@ export const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div className="container mx-auto px-4">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>{children}</main>
@@ -33,7 +33,7 @@ export const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   );
 };
 
