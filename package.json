@@ -20,8 +20,11 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "autoprefixer": "^10.4.7",
     "gatsby-plugin-postcss": "^5.18.0",
+    "husky": "^8.0.1",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.5"
@@ -33,10 +36,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "prettier": "prettier --config ./.prettierrc \"src/**/*.js\" --write",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "prepare": "husky install",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
