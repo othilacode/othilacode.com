@@ -1,45 +1,45 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import { Layout } from "../components/Layout"
-import { Seo } from "../components/Seo"
+import { Layout } from '../components/Layout';
+import { Seo } from '../components/Seo';
 
 const samplePageLinks = [
   {
-    text: "Page 2",
-    url: "page-2",
+    text: 'Page 2',
+    url: 'page-2',
     badge: false,
     description:
-      "A simple example of linking to another page within a Gatsby site",
+      'A simple example of linking to another page within a Gatsby site',
   },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
+  { text: 'TypeScript', url: 'using-typescript' },
+  { text: 'Server Side Rendering', url: 'using-ssr' },
+  { text: 'Deferred Static Generation', url: 'using-dsg' },
+];
 
 const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+  { text: 'Join us on Discord', url: 'https://gatsby.dev/discord' },
   {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
+    text: 'Documentation',
+    url: 'https://gatsbyjs.com/docs/',
   },
   {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
+    text: 'Starters',
+    url: 'https://gatsbyjs.com/starters/',
   },
   {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
+    text: 'Showcase',
+    url: 'https://gatsbyjs.com/showcase/',
   },
   {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
+    text: 'Contributing',
+    url: 'https://www.gatsbyjs.com/contributing/',
   },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
+  { text: 'Issues', url: 'https://github.com/gatsbyjs/gatsby/issues' },
+];
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`;
 
 const IndexPage = () => (
   <Layout>
@@ -50,14 +50,14 @@ const IndexPage = () => (
         loading="eager"
         width={64}
         quality={95}
-        formats={["auto", "webp", "avif"]}
+        formats={['auto', 'webp', 'avif']}
         alt=""
       />
       <h1 className="text-3xl font-bold underline">
         Welcome to <b>Gatsby!</b>
       </h1>
       <p>
-        <b>Example pages:</b>{" "}
+        <b>Example pages:</b>{' '}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
@@ -75,6 +75,6 @@ const IndexPage = () => (
       </React.Fragment>
     ))}
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
