@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { Layout } from "../components/Layout"
-import { Seo } from "../components/Seo/seo"
+import { Seo } from "../components/Seo"
 
 const samplePageLinks = [
   {
@@ -52,7 +52,6 @@ const IndexPage = () => (
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
-        style={{ marginBottom: `var(--space-3)` }}
       />
       <h1 className="text-3xl font-bold underline">
         Welcome to <b>Gatsby!</b>
