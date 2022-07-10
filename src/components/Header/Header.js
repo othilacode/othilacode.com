@@ -19,7 +19,7 @@ export const Header = ({ siteTitle }) => (
           />
         </Link>
         <div className="mx-4 w-24 flex justify-between items-center">
-          <Link to="/course" className="text-sm text-zinc-600">
+          <Link to="/courses" className="text-sm text-zinc-600">
             Cours
           </Link>
           <Link to="/blog" className="text-sm text-zinc-600">

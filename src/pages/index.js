@@ -7,13 +7,13 @@ import { Seo } from '../components/Seo';
 
 const samplePageLinks = [
   {
-    text: 'Page 2',
-    url: 'page-2',
+    text: 'Cours',
+    url: 'courses',
     badge: false,
     description:
       'A simple example of linking to another page within a Gatsby site',
   },
-  { text: 'TypeScript', url: 'using-typescript' },
+  { text: 'Blog', url: 'blog' },
   { text: 'Server Side Rendering', url: 'using-ssr' },
   { text: 'Deferred Static Generation', url: 'using-dsg' },
 ];
