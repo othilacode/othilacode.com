@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `OthilaCode`,
@@ -31,9 +33,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    "gatsby-plugin-postcss",
+    'gatsby-plugin-postcss',
     // this (optional) plugin enables Progressive Web App + Offline functionality
+    /* {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        contentTypeFilter: (contentType) =>
+          !contentType.sys.id.startsWith('page'),
+      },
+    }, */
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
