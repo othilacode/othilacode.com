@@ -23,16 +23,17 @@ export const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container h-screen mx-auto px-5">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+      <main className="mb-auto">{children}</main>
+      <footer
+        className="bg-blue-500 fixed
+             inset-x-0
+             bottom-0"
+      >
+        © {new Date().getFullYear()} &middot; Built with{' '}
+        <a href="https://www.gatsbyjs.com">Gatsby</a>
+      </footer>
     </div>
   );
 };

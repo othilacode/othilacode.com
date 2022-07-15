@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import { Layout } from '../components/Layout';
 import { Seo } from '../components/Seo';
+import { CourseCard } from '../components/CourseCard';
 
 const samplePageLinks = [
   {
@@ -44,7 +45,12 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div>
+    <div className="flex flex-row items-center justify-center mt-12">
+      <div className="py-4">
+        <CourseCard />
+      </div>
+    </div>
+    <div className="border-gray-600 border-2 border-solid ">
       <StaticImage
         src="../images/example.png"
         loading="eager"
