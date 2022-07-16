@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-import { Layout } from '../components/Layout/Layout';
-import { Seo } from '../components/Seo/Seo';
+import { Layout } from '../components/organism/Layout';
+import { Seo } from '../components/atoms/Seo';
 
 const Blog = () => (
   <Layout>

@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export const CourseCard = ({ name, duration, img }) => {
   return (
-    <div className="flex flex-col items-center w-96 border-gray-600 border-2 border-solid rounded">
+    <div className="flex flex-col items-center w-96 border-gray-600 border-[1px] border-solid rounded">
       <div className="py-8">
         <StaticImage
           src={'../../images/example.png'}
@@ -14,7 +14,7 @@ export const CourseCard = ({ name, duration, img }) => {
           alt={`logo_${name}`}
         />
       </div>
-      <div className="flex w-full px-2 py-3 flex-row justify-between border-gray-600 border-t-2 border-solid">
+      <div className="flex w-full px-2 py-3 flex-row justify-between border-gray-600 border-t-[1px] border-solid">
         <div>{name}</div>
         <div>{duration}</div>
       </div>

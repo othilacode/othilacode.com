@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import { Layout } from '../components/Layout';
-import { Seo } from '../components/Seo';
-import { CourseCard } from '../components/CourseCard';
+import { Layout } from '../components/organism/Layout';
+import { Seo } from '../components/atoms/Seo';
+import { CourseCard } from '../components/atoms/CourseCard/';
 
 const samplePageLinks = [
   {

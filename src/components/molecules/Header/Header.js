@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Button } from '../Button';
+import { Button } from '../../atoms/Button/Button';
 
 export const Header = ({ siteTitle }) => (
   <header className="h-[80px] drop-shadow-lg">
