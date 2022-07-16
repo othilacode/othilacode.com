@@ -1,0 +1,6 @@
+{
+    "name": "last_courses",
+    "version": "1.0.0",
+    "private": false,
+    "main": "./LastCourses.js"
+}

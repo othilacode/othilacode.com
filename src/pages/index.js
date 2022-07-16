@@ -4,6 +4,7 @@ import { Layout } from '../components/organism/Layout';
 import { Seo } from '../components/atoms/Seo';
 import { Banner } from '../components/molecules/Banner';
 import { Divider } from '../components/atoms/Divider';
+import { LastCourses } from '../components/molecules/LastCourses/';
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +13,8 @@ const IndexPage = () => (
       <div className="flex flex-row justify-center w-3/4">
         <Banner />
       </div>
+      <Divider />
+      <LastCourses />
       <Divider />
     </div>
   </Layout>
