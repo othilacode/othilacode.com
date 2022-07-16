@@ -5,7 +5,7 @@ export const Button = ({ type, text, handleClick }) => {
   return (
     <div className="p-1">
       <button
-        className={`text-zinc-600 font-semibold py-2 px-4 rounded-md border-solid border-zinc-600 border-2 hover:text-zinc-900 hover:border-zinc-900`}
+        className={`text-zinc-600 font-semibold py-2 px-4 rounded-md border-solid border-zinc-600 border-[1px] hover:text-zinc-900 hover:border-zinc-900`}
         type={type}
         onClick={handleClick}
       >
@@ -17,6 +17,7 @@ export const Button = ({ type, text, handleClick }) => {
 
 Button.defaultProps = {
   type: 'button',
+  handleClick: () => void 0,
 };
 Button.propTypes = {
   handleClick: PropTypes.func.isRequired,
