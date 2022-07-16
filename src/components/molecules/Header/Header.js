@@ -20,7 +20,7 @@ export const Header = ({ siteTitle }) => (
         </Link>
         <div className="mx-4 w-24 flex justify-between items-center">
           <Link to="/courses" className="text-sm text-zinc-600">
-            Cours
+            Course
           </Link>
           <Link to="/blog" className="text-sm text-zinc-600">
             Blog
@@ -28,10 +28,7 @@ export const Header = ({ siteTitle }) => (
         </div>
       </div>
 
-      <Button
-        handleClick={() => console.log('Contact Me')}
-        text="Contactez-moi"
-      />
+      <Button handleClick={() => console.log('Contact Me')} text="Contact me" />
     </div>
   </header>
 );
